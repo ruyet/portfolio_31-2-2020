@@ -1,0 +1,201 @@
+body {
+    background-color: #f5f5fa;
+}
+
+/* When darkmode gets activated use next css styles*/
+body.darkmode {
+    background-color: #545C69;
+}
+body.darkmode .top-part {
+    background-color: #262c38;
+    color: white;
+}
+
+body.darkmode .bottom-part {
+    background-image: linear-gradient(to bottom, #262c38 , #222833);
+}
+
+body.darkmode label {
+    color: white;
+}
+body.darkmode input {
+    color: white;
+    background-color: #2F3543;
+    border-color: transparent;
+}
+
+body.darkmode select#operator-list {
+    color: white;
+    background-color: #2F3543;
+    border-color: transparent;
+}
+
+body.darkmode input.btn-reset {
+    color: #6078ff;
+    background-color: white;
+}
+
+body.darkmode input.btn-calculate {
+    color: white;
+    background-color: rgb(96, 120, 255);
+}
+
+/* Give both buttons a fixed width so they are next to eachother */
+body input.btn-reset,
+body input.btn-calculate {
+    width: 150px;
+}
+
+.container {
+    width: 400px;
+    color: rgb(51, 51, 79);
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px -2px #00296b;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.top-part {
+    margin-top: 120px;
+    font-size: 50px;
+    color: rgb(51, 51, 79);
+    font-family: arial;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    background-color: #fdfdfe;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 20px;
+}
+
+.top-dash {
+    position: relative;
+}
+
+.top-dash::after {
+    content: ' ';
+    margin-top: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(197,201,224,0),rgba(197,201,224,1),rgba(197,201,224,0) );
+}
+
+
+.bottom-part {
+    background-color: #fdfdfe;
+    background-image: linear-gradient(to bottom, #fdfdfe , #efeff5);
+    padding: 40px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.bottom-part label {
+    width: 100%;
+    display: block;
+    font-family: arial;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.bottom-part select {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom-part input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* Modify specific "ul" within .bottom-part */
+.bottom-part ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.btn-reset {
+    float: right;
+    width: 150px;
+    border: none;
+    background-color: white;
+    box-shadow: 1px 1px 5px -2px #00296b;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #6078ff;
+    cursor: pointer;
+    font-family: AdelleSans, proxima-nova, Proxima Nova, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.25s;
+    isolation: isolate;
+}
+
+/* When hover on the button use the next class */
+.btn-reset:hover {
+    box-shadow: 1px 1px 5px -2px #00296b;
+    transform: translateY(-0.25em);
+}
+
+.btn-calculate {
+    border: none;
+    width: 150px;
+    background-color: rgb(96, 120, 255);
+    box-shadow: 1px 1px 5px -2px #00296b;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: AdelleSans, proxima-nova, Proxima Nova, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.25s;
+    isolation: isolate;
+}
+
+/* When hover on the button use the next class */
+.btn-calculate:hover {
+    box-shadow: 1px 1px 5px -2px #00296b;
+    transform: translateY(-0.25em);
+}
+
+/* Disable typing in decimal input */
+.input-numbers-decimals {
+    cursor: not-allowed;
+}
+
+/* Darkmode button style */
+#dark-mode-button {
+    border: none;
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(96, 120, 255);
+    box-shadow: 1px 1px 5px -2px #00296b;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: AdelleSans, proxima-nova, Proxima Nova, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.25s;
+    isolation: isolate;
+}
